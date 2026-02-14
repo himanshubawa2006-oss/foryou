@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivratri Surprise for My Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #0f0c29; /* Deep Night Theme */
+            background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Animated Floating Background Particles */
+        .bg-particles {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Container - Phone Style */
+        .phone-display {
+            width: 90vw;
+            max-width: 380px;
+            height: 85vh;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        /* Scrolling System */
+        .slider {
+            display: flex;
+            height: 100%;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+        .slider::-webkit-scrollbar { display: none; }
+
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            scroll-snap-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Graphics & Text */
+        .symbol {
+            font-size: 80px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 15px #ffd700);
+            animation: pulse 2s infinite;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 42px;
+            color: #ff9a9e; /* Soft Pinkish Gold */
+            margin: 10px 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 300;
+            color: #eee;
+        }
+
+        .swipe-indicator {
+            position: absolute;
+            bottom: 40px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+        }
+
+        /* Animations */
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        .heart-beat {
+            color: #ff4d4d;
+            animation: pulse 1s infinite;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-particles">
+        </div>
+
+    <div class="phone-display">
+        <div class="slider">
+            
+            <div class="slide">
+                <div class="symbol">🔱</div>
+                <h1>Happy Shivratri</h1>
+                <p>meri payeri wife ka liya</p>
+                <div class="swipe-indicator">Swipe Left Karo ➔</div>
+            </div>
+
+            <div class="slide">
+                <div class="symbol">🕉️</div>
+                <h1>Har Har Mahadev</h1>
+                <p>Bhole Nath tumhari har wish poori karein aur humein hamesha saath rakhein.</p>
+                <div class="swipe-indicator">Aur Thoda ➔</div>
+            </div>
+
+            <div class="slide">
+                <div class="symbol">🌸</div>
+                <h1>Special Message</h1>
+                <p>Jaise Shiv aur Parvati ki jodi amar hai, waise hi humara pyaar hamesha bana rahe. ❤️</p>
+                <div class="swipe-indicator">Bas Ek Baar Aur ➔</div>
+            </div>
+
+            <div class="slide">
+                <div class="symbol">❤️</div>
+                <h1>I Love You</h1>
+                <p>Tum meri duniya ho. <br><span class="heart-beat">🥰🫠</span></p>
+                <p style="font-size: 14px; margin-top: 20px;">Ab jaldi se smile karke reply karo!</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
